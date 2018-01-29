@@ -1,0 +1,17 @@
+webpack-dev-server --inline //run localhost without iframe and auto refresh the page once code changes
+
+//install packages
+babel-core^6.2.1
+babel-loader^6.2.0
+babel-preset-es2015^6.1.18 //which wasn't seperate with Babel version 5, it was included in the babel-core
+jshint^2.8.0
+jshint-loader^0.8.3
+node-libs-browser^0.5.3
+webpack^1.12.9
+strip-loader^0.1.0
+
+.babelrc file also need after version 5 and have to have this presets key with the value es2015
+
+webpack -p //minimize the code
+
+webpack --config webpack-production.config.js -p //specific a config file
