@@ -5,11 +5,7 @@ var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('shared.js');
 
 module.exports = {
     context: path.resolve('js'),
-    entry:{
-        about:"./about_page.js",
-        home:"./homt_page.js",
-        contact:"./contact_page.js"
-    },
+    entry:["./app.js"],
     output:{
         path: path.resolve('build/js/'), //source code path
         publicPath:'/public/assets/js/', //index.html logic path and mapping to source code path
