@@ -35,6 +35,11 @@ module.exports = {
                 test:/\.css$/,
                 exclue:/node_modules/,
                 loader:"style-loader!css-loader" //run through from css-loader first and then run the result through the style-loader
+            },
+            {
+                test:/\.scss$/,
+                exclue:/node_modules/,
+                loader:"style-loader!css-loader!sass-loader"
             }
         ]
     },

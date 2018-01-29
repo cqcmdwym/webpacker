@@ -1,2 +1,2 @@
-require('../css/bootstrap.css');
+require('../css/bootstrap.scss');
 require('../css/app.css');

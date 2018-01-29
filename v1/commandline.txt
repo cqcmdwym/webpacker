@@ -11,6 +11,8 @@ webpack^1.12.9
 strip-loader^0.1.0
 style-loader@0.12.3
 css-loader@0.15.5
+sass-loader@1.0.2
+
 
 .babelrc file also need after version 5 and have to have this presets key with the value es2015
 
