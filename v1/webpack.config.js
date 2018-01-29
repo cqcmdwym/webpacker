@@ -1,8 +1,17 @@
+var path = require('path');
+
 module.exports = {
+    context: path.resolve('js'),
     entry:["./utils.js","./app.js"],
     output:{
-        filename:"bundle.js"
+        path: path.resolve('build/js/'), //source code path
+        publicPath:'/public/assets/js/', //index.html logic path and mapping to source code path
+        filename:"bundle.js"//build.js under build/js directory
     },
+
+    devServer:{
+        contentBase:'public'
+    }, // bundle file isn't actually produced and put on the disk, it's just served up virtually by the web server
     modules:{
         preLoaders:[
             {
