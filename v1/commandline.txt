@@ -9,9 +9,13 @@ jshint-loader^0.8.3
 node-libs-browser^0.5.3
 webpack^1.12.9
 strip-loader^0.1.0
+style-loader@0.12.3
+css-loader@0.15.5
 
 .babelrc file also need after version 5 and have to have this presets key with the value es2015
 
 webpack -p //minimize the code
 
 webpack --config webpack-production.config.js -p //specific a config file
+
+webpack -d generate source maps
