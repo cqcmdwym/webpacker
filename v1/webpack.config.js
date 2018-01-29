@@ -44,7 +44,7 @@ module.exports = {
                 loader:"style-loader!css-loader!auto-prefixer-loader!less-loader"
             },
             {
-                test:/\.(png|jpg)$/,
+                test:/\.(png|jpg|ttf|eot)$/,
                 exclue:/node_modules/,
                 loader:"url-loader?limit=10000"//image size < 10000, will turn into Base64 encoded data, otherwise create a separated iamge
             }
