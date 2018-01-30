@@ -1,0 +1,1 @@
+const str = ['javascript','Node','webpack'];
