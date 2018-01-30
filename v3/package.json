@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "./node_modules/.bin/webpack index.js bundle.js"
+    "bundle": "./node_modules/.bin/webpack"
   },
   "author": "",
   "license": "ISC",
