@@ -65,9 +65,12 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const str = ['javascript','Node','webpack'];
+"use strict";
+
+
+var str = ['javascript', 'Node', 'webpack'];
 
 /***/ })
 /******/ ]);
