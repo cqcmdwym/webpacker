@@ -5,7 +5,7 @@ var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('shared.js');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    context: path.resolve('js'),
+    context: path.resolve('js'),//set a relative root directory for the entry key
     entry:["./app.js"],
     output:{
         path: path.resolve('build/'), //source code path
