@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "./node_modules/.bin/webpack"
+    "bundle": "webpack",
+    "watch":"webpack --w"
   },
   "author": "",
   "license": "ISC",
