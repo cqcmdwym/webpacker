@@ -18334,8 +18334,8 @@ var update = __webpack_require__(30)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
+	module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -18369,7 +18369,7 @@ exports = module.exports = __webpack_require__(29)(false);
 
 
 // module
-exports.push([module.i, "h1{\r\n    font-family: Arial;\r\n    color: #FF0000;\r\n}", ""]);
+exports.push([module.i, "div {\n  background-color: #00FF00;\n  color: #FFFFFF; }\n", ""]);
 
 // exports
 
