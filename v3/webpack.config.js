@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        about: "./src/about.js",
+        contact:"./src/contact.js"
+    },
     output: {
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
         path: path.join(__dirname, 'dist')
     },
     devServer: {
