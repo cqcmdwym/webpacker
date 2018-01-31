@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './style.scss';
 
 class Image extends React.Component{
+    constructor(props){
+        super()
+        this.state={
+            title:"dfdfd"
+        }
+    }
     render(){
         return (
             <div>
-                <h1>{this.props.title}</h1>
+                <h1>{this.state.title}</h1>
                 <p>{this.props.caption}</p>
                 <div id="image"></div>
             </div>
@@ -15,4 +21,4 @@ class Image extends React.Component{
 }
 const MyComponent = () => <h1>Webpack &amp; React</h1>
 
-ReactDOM.render(<Image title="Desolation Wilderness" caption="Wilderness are in Lake?"/>, document.getElementById('react-container'))
+ReactDOM.render(<Image caption="Wilderness are in Lake?"/>, document.getElementById('react-container'))
