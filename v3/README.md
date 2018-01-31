@@ -1,0 +1,1 @@
+webpack-dev-server 2.0 default it --inline, will reload the page once code changes
