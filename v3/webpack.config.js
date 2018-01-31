@@ -3,8 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        about: "./src/about.js",
-        contact:"./src/contact.js"
+        vendor: ["react","react-dom"],
+        app:"./src/index.js"
     },
     output: {
         filename: "[name].bundle.js",
@@ -54,8 +54,8 @@ module.exports = {
     },
     plugins:[
         new webpack.optimize.CommonsChunkPlugin({
-            name: "commons",
-            filename:"commons.bundle.js"
+            name: "vendor",
+            filename:"vendor.bundle.js"
         })
     ]
 }
